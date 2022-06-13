@@ -5,6 +5,13 @@ const productInitalState = {
   data: [],
 };
 
-export const productReducer = (state = productInitalState) => {
-  return state;
+export const productReducer = (
+  state = productInitalState,
+  { type, payload }
+) => {
+  switch (type) {
+    default: {
+      return state;
+    }
+  }
 };

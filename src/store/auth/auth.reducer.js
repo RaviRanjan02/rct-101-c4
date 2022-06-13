@@ -8,6 +8,10 @@ export const authInitalState = {
   error: false,
 };
 
-export const authReducer = (state = authInitalState) => {
-  return state;
+export const authReducer = (state = authInitalState,{ type, payload }) => {
+  switch (type) {
+    default: {
+      return state;
+    }
+  }
 };
