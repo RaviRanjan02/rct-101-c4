@@ -21,7 +21,8 @@ export const productReducer = (
       return{...state,loading:true,error:false}
     }
     case GET_PRODUCTS_SUCCESS:{
-      return{...state, loading:false, error:false}
+      return{...state, loading:false, error:false , data:payload}
+      
     }
     case GET_PRODUCTS_ERROR:{
       return{...state, loading:false, error:true}

@@ -1,9 +1,9 @@
 import React from "react";
 import Product from "../Products/Product/Product"
 
-const Products = () => {
+const Products = ({key,name,des}) => {
   return <div>
-    <Product/>
+    <Product key={key} name={name} describe={des}/>
   </div>;
 };
 

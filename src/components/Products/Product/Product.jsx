@@ -7,12 +7,12 @@ import {
   updateCartItem,
 } from "../../../store/cart/cart.actions";
 
-const Product = () => {
-  const id = null;
+const Product = ({key,name,describe}) => {
+
   return (
-    <div data-cy={`product-${id}`}>
-      <h3 data-cy="product-name">name</h3>
-      <h6 data-cy="product-description">description</h6>
+    <div data-cy={`product-${key.id}`}>
+      <h3 data-cy="product-name" >{name}</h3>
+      <h6 data-cy="product-description">{describe}</h6>
       <button data-cy="product-add-item-to-cart-button"></button>
       <div>
         <button data-cy="product-increment-cart-item-count-button"></button>
